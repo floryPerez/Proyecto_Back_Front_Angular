@@ -21,7 +21,6 @@ export class ListaEmpleadosComponent implements OnInit {
   ngOnInit(): void {
     //se inicializa
     this.obtenerEmpleados();
-
   }
 
   actualizarEmpleado(id: number) {
@@ -38,26 +37,7 @@ export class ListaEmpleadosComponent implements OnInit {
   verDetallesDelEmpleado(id: number) {
     this.router.navigate(['empleado-detalles', id]);
   }
-  // eliminarEmpleado(id:number){
-  //   this.empleadoServicio.eliminarEmpleado(id).subscribe(dato=> {
-  //     console.log(dato);
-  //     this.obtenerEmpleados();
-  //   });
-  // }
 
-  /*
-    eliminarEmpleado(id: number) {
-      const ok = confirm("¿Estas seguro de eliminar esta tarea?");
-      if (ok) {
-        this.empleadoServicio.eliminarEmpleado(id).subscribe(dato => {
-          console.log(dato);
-          this.obtenerEmpleados();
-        }
-        );
-    }
-  }
-  }
-  */
 
   eliminarEmpleado(id:number){
     Swal.fire({

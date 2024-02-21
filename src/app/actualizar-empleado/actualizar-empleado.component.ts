@@ -3,6 +3,7 @@ import { EmpleadoService } from '../empleado.service';
 
 import { Router,ActivatedRoute } from '@angular/router';
 import { Empleado } from '../empleado';
+import Swal from 'sweetalert2';
 
 
 @Component({
@@ -37,5 +38,7 @@ export class ActualizarEmpleadoComponent implements OnInit {
 
   irALaListaDeEmpleado(){
     this.router.navigate(['/empleados']);
+    Swal.fire('Empleado actualizada',`El empleado ${this.empleado.nombre} ha sido actualizado con exito`,`success`);
+
   }
 }

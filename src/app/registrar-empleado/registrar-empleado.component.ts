@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Empleado } from '../empleado';
 import { EmpleadoService } from '../empleado.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-registrar-empleado',
@@ -29,6 +30,8 @@ constructor(private empleadoServicio:EmpleadoService,
    }
    irAlaListaDeEmpleados() {
      this.router.navigate(['/empleados']);
+     Swal.fire('Empleado agregado',`El empleado ${this.empleado.nombre} ha sido agregado con exito`,`success`);
+
    }
 
   onSubmit() {
