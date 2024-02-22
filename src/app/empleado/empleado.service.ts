@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Empleado } from './empleado';
+import { environment } from '../../../environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,8 @@ import { Empleado } from './empleado';
 export class EmpleadoService {
 
   //esta url obtiene el listadp de todos los empleados en el backend
-  private baseURL = "http://localhost:8080/api/v1/empleados";
+  private baseURL = `${environment.apiBaseUrl}/app/empleados`;
+
 
   constructor(private httpClient: HttpClient) { }
   //este método sirve para obtener los empleados 

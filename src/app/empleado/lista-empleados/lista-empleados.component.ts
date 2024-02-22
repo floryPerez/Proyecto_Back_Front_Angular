@@ -70,38 +70,3 @@ export class ListaEmpleadosComponent implements OnInit {
 }  
 
 
-
-
-/*
-
-eliminarEmpleado(id: number) {
-Swal({
- title: '¿Estas seguro?',
-     text: "Confirma que quiere eliminar al empleado",
-      icon: 'warning',
-      showCancelButton: true,
-       confirmButtonColor: '#3085d6',
-     cancelButtonColor: '#d33',
-       confirmButtonText: 'Sí, elimínalo',
-       cancelButtonText: 'no, cancelar',
-    confirmButtonClass: 'btn btn-succes',
-       cancelButtonClass: 'btn btn-danger',
-       buttonsStyling: true
-     }).then((result) => {
-       if (result.value) {
-         this.empleadoServicio.eliminarEmpleado(id).subscribe(dato => {
-           console.log(dato);
-          this.obtenerEmpleados();
-           Swal(
-
-            'Empleado eliminado',
-            'El empleado  ha sido eliminada con exito',
-            'success'
-          )
-         })
-      }
-     })
-
-   }
- }
-*/

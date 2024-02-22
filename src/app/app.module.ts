@@ -7,10 +7,10 @@ import { FormsModule } from '@angular/forms';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 
 import {provideClientHydration} from '@angular/platform-browser';
-import { ListaEmpleadosComponent } from './lista-empleados/lista-empleados.component';
-import { ActualizarEmpleadoComponent } from './actualizar-empleado/actualizar-empleado.component';
-import { EmpleadoDetallesComponent } from './empleado-detalles/empleado-detalles.component';
-import { RegistrarEmpleadoComponent } from './registrar-empleado/registrar-empleado.component';
+import { ListaEmpleadosComponent } from './empleado/lista-empleados/lista-empleados.component';
+import { ActualizarEmpleadoComponent } from './empleado/actualizar-empleado/actualizar-empleado.component';
+import { EmpleadoDetallesComponent } from './empleado/empleado-detalles/empleado-detalles.component';
+import { RegistrarEmpleadoComponent } from './empleado/registrar-empleado/registrar-empleado.component';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 @NgModule({
